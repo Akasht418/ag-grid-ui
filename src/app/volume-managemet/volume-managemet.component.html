@@ -1,0 +1,17 @@
+<div class="header" style="height: 50px;">
+    <button (click)="search()">Search</button>
+    <button (click)="enableEditing()">Enable Editing</button>
+    <button (click)="disableEditing()">Disable Editing</button>
+    <button (click)="expandAll()">Expand all row grooup</button>
+    <button (click)="colapseAll()">collapse all row group</button>
+</div>
+<div class="content" style="width: 100%; height: 600px;">
+
+    <ag-grid-angular style="width: 100%; height: 100%;" [columnDefs]="columnDefs" [defaultColDef]="defaultColDef"
+        [rowBuffer]="rowBuffer" [rowModelType]="rowModelType" [cacheBlockSize]="cacheBlockSize"
+        [maxBlocksInCache]="maxBlocksInCache" [rowData]="rowData" [class]="themeClass"
+        [suppressGroupRowsSticky]="true" [autoGroupColumnDef]="autoGroupColumnDef"
+        [suppressMakeColumnVisibleAfterUnGroup]="true" [rowGroupPanelShow]="'always'" [showOpenedGroup]="true"
+        [groupDisplayType]="'multipleColumns'" [suppressAggFuncInHeader]="true" (gridReady)="onGridReady($event)"
+        (cellValueChanged)="onCellValueChanged($event)" />
+</div>

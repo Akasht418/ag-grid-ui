@@ -1,0 +1,12 @@
+/* Example CSS */
+.editable-cell {
+  background-color: lightblue; /* Default background color for editable cells */
+}
+
+.edited-cell {
+  background-color: yellow; /* Background color after editing */
+}
+
+.dirty-cell {
+  background-color: lightgreen; /* Background color after editing with changes */
+}
